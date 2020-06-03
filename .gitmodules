@@ -1,0 +1,9 @@
+[submodule "resources/coredns"]
+	path = resources/coredns
+	url = https://github.com/coredns/coredns.git
+[submodule "resources/odl/controller"]
+	path = resources/odl/controller
+	url = https://github.com/opendaylight/controller.git
+[submodule "resources/trfficcontrol"]
+	path = resources/trfficcontrol
+	url = https://github.com/apache/trafficcontrol.git
