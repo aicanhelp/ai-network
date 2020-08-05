@@ -7,3 +7,18 @@
 [submodule "resources/trfficcontrol"]
 	path = resources/trfficcontrol
 	url = https://github.com/apache/trafficcontrol.git
+[submodule "resources/jmqtt"]
+	path = resources/jmqtt
+	url = https://github.com/Cicizz/jmqtt.git
+[submodule "resources/vertx-mqtt-broker"]
+	path = resources/vertx-mqtt-broker
+	url = https://github.com/GruppoFilippetti/vertx-mqtt-broker.git
+[submodule "resources/emitter"]
+	path = resources/emitter
+	url = https://github.com/emitter-io/emitter.git
+[submodule "resources/odl/odlparent"]
+	path = resources/odl/odlparent
+	url = https://github.com/opendaylight/odlparent.git
+[submodule "resources/openvswitch"]
+	path = resources/openvswitch
+	url = https://github.com/openvswitch/ovs.git
