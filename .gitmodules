@@ -22,3 +22,9 @@
 [submodule "resources/openvswitch"]
 	path = resources/openvswitch
 	url = https://github.com/openvswitch/ovs.git
+[submodule "resources/floodlight"]
+	path = resources/floodlight
+	url = https://github.com/floodlight/floodlight.git
+[submodule "resources/floodlight-webui"]
+	path = resources/floodlight-webui
+	url = https://github.com/floodlight/floodlight-webui.git
