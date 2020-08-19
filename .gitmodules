@@ -28,3 +28,18 @@
 [submodule "resources/floodlight-webui"]
 	path = resources/floodlight-webui
 	url = https://github.com/floodlight/floodlight-webui.git
+[submodule "resources/sdn-pox"]
+	path = resources/sdn-pox
+	url = https://github.com/noxrepo/pox.git
+[submodule "resources/sdn-ryu"]
+	path = resources/sdn-ryu
+	url = https://github.com/faucetsdn/ryu.git
+[submodule "resources/sdn-faucet"]
+	path = resources/sdn-faucet
+	url = https://github.com/faucetsdn/faucet.git
+[submodule "resources/sdn-onos"]
+	path = resources/sdn-onos
+	url = https://github.com/opennetworkinglab/onos.git
+[submodule "resources/mininet"]
+	path = resources/mininet
+	url = https://github.com/mininet/mininet.git
