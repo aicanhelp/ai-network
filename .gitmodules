@@ -43,3 +43,6 @@
 [submodule "resources/mininet"]
 	path = resources/mininet
 	url = https://github.com/mininet/mininet.git
+[submodule "resources/openvirtex"]
+	path = resources/openvirtex
+	url = https://github.com/os-libera/OpenVirteX.git
