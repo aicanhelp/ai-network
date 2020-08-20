@@ -46,3 +46,6 @@
 [submodule "resources/openvirtex"]
 	path = resources/openvirtex
 	url = https://github.com/os-libera/OpenVirteX.git
+[submodule "resources/openstack-neutron"]
+	path = resources/openstack-neutron
+	url = https://github.com/openstack/neutron.git
