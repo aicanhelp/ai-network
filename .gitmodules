@@ -49,3 +49,6 @@
 [submodule "resources/openstack-neutron"]
 	path = resources/openstack-neutron
 	url = https://github.com/openstack/neutron.git
+[submodule "resources/OnosSystemTest"]
+	path = resources/OnosSystemTest
+	url = https://gerrit.onosproject.org/OnosSystemTest
