@@ -1,0 +1,137 @@
+/*
+Copyright 2019-present Open Networking Foundation.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+syntax = "proto3";
+
+// Package topo defines interfaces for managing network top
+package topo;
+
+import "gogoproto/gogo.proto";
+import "github.com/onosproject/onos-topo/api/device/device.proto";
+
+// EntityService provides an API for managing entities.
+service Topo {
+  // Insert or replace an object from the topology
+  rpc Set (SetRequest) returns (SetResponse) {
+  }
+
+  // Get an object from topology
+  rpc Get (GetRequest) returns (GetResponse) {
+  }
+
+  // Delete an object from topology
+  rpc Delete (DeleteRequest) returns (DeleteResponse) {
+  }
+
+  // List gets a stream of requested objects
+  rpc List (ListRequest) returns (stream ListResponse) {
+  }
+
+  // Subscribe returns a stream of topo change notifications
+  rpc Subscribe (SubscribeRequest) returns (stream SubscribeResponse) {
+  }
+}
+
+message SetRequest {
+  // The write batch, comprising a list of Update operations
+  repeated Object objects = 1;
+}
+
+message SetResponse {
+}
+
+message GetRequest {
+  string id = 1 [(gogoproto.customname) = "ID", (gogoproto.casttype) = "ID"];
+}
+
+message GetResponse {
+  Object object = 1;
+}
+
+message DeleteRequest {
+  string id = 1 [(gogoproto.customname) = "ID", (gogoproto.casttype) = "ID"];
+}
+
+message DeleteResponse {
+}
+
+message ListRequest {
+}
+
+message ListResponse {
+  Object object = 1;
+}
+
+message SubscribeRequest {
+  string id = 1 [(gogoproto.customname) = "ID", (gogoproto.casttype) = "ID"];
+  bool noreplay = 2;
+}
+
+message SubscribeResponse {
+  Update update = 1;
+}
+
+message Update {
+  enum Type {
+    UNSPECIFIED = 0;
+    INSERT = 1;
+    MODIFY = 2;
+    DELETE = 3;
+  }
+  Type type = 2;
+  Object object = 3;
+}
+
+message Object {
+  string id = 1 [(gogoproto.customname) = "ID", (gogoproto.casttype) = "ID"];
+
+  enum Type {
+    UNSPECIFIED = 0;
+    ENTITY = 1;
+    RELATION = 2;
+    KIND = 3;
+  }
+  Type type = 2;
+
+  oneof obj {
+    Entity entity = 3;
+    Relation relation = 4;
+    Kind kind = 5;
+  }
+
+  map<string, string> attributes = 6;
+}
+
+// Entity represents any "thing" that is represented in the topology
+message Entity {
+  // user-defined entity kind
+  string kind_id = 1 [(gogoproto.customname) = "KindID", (gogoproto.casttype) = "ID"];
+  repeated topo.device.ProtocolState protocols = 2;
+}
+
+message Relation {
+  // user defined relation kind
+  string kind_id = 1 [(gogoproto.customname) = "KindID", (gogoproto.casttype) = "ID"];
+
+  string src_entity_id = 2 [(gogoproto.customname) = "SrcEntityID", (gogoproto.casttype) = "ID"];
+  string tgt_entity_id = 3 [(gogoproto.customname) = "TgtEntityID", (gogoproto.casttype) = "ID"];
+}
+
+message Kind {
+  string name = 1;
+  // Map of attributes and their default values for this Kind
+  map<string, string> attributes = 2;
+}

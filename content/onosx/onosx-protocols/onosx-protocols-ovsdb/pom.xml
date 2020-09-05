@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.onosproject</groupId>
+        <artifactId>onosx-protocols</artifactId>
+        <version>1.4.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>onosx-protocols-ovsdb</artifactId>
+    <packaging>pom</packaging>
+
+    <description>ONOS OVSDB southbound plugin</description>
+
+    <modules>
+        <module>onosx-protocols-ovsdb-api</module>
+        <module>onosx-protocols-ovsdb-rfc</module>
+        <module>onosx-protocols-ovsdb-ctl</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-buffer</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-handler</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

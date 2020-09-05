@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<app name="org.onosproject.openflow-base" origin="ON.Lab" version="${project.version}"
+     featuresRepo="mvn:${project.groupId}/${project.artifactId}/${project.version}/xml/features"
+     features="${project.artifactId}">
+    <description>${project.description}</description>
+
+    <artifact>mvn:${project.groupId}/onosx-protocols-openflow-api/${project.version}</artifact>
+    <artifact>mvn:${project.groupId}/onosx-protocols-openflow-ctl/${project.version}</artifact>
+    <artifact>mvn:${project.groupId}/onosx-drivers/${project.version}</artifact>
+
+    <artifact>mvn:${project.groupId}/onosx-providers-openflow-device/${project.version}</artifact>
+    <artifact>mvn:${project.groupId}/onosx-providers-openflow-packet/${project.version}</artifact>
+    <artifact>mvn:${project.groupId}/onosx-providers-openflow-flow/${project.version}</artifact>
+    <artifact>mvn:${project.groupId}/onosx-providers-openflow-group/${project.version}</artifact>
+    <artifact>mvn:${project.groupId}/onosx-providers-openflow-meter/${project.version}</artifact>
+</app>

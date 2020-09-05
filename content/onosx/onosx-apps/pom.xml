@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.onosproject</groupId>
+        <artifactId>onosx</artifactId>
+        <version>1.4.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>onosx-apps</artifactId>
+    <packaging>pom</packaging>
+
+    <description>ONOS sample applications</description>
+
+    <modules>
+        <module>onosx-apps-aaa</module>
+        <module>onosx-app-sacl</module>
+        <module>onosx-apps-faultmanagement</module>
+        <module>onosx-apps-fwd</module>
+        <module>onosx-apps-mobility</module>
+        <module>onosx-apps-proxyarp</module>
+        <module>onosx-apps-sdnip</module>
+        <module>onosx-apps-optical</module>
+        <module>onosx-apps-metrics</module>
+        <module>onosx-apps-routing</module>
+        <module>onosx-apps-routing-api</module>
+        <module>onosx-apps-reactive-routing</module>
+        <module>onosx-apps-virtualbng</module>
+        <module>onosx-apps-bgprouter</module>
+        <module>onosx-apps-test</module>
+        <module>onosx-apps-segmentrouting</module>
+        <module>onosx-apps-cordfabric</module>
+        <module>onosx-apps-xos-integration</module>
+        <module>onosx-apps-pcep-api</module>
+        <module>onosx-apps-iptopology-api</module>
+        <module>onosx-apps-olt</module>
+        <module>onosx-apps-cip</module>
+        <module>onosx-apps-flowanalyzer</module>
+        <module>onosx-apps-vtn</module>
+        <module>onosx-apps-dhcp</module>
+        <module>onosx-apps-cordvtn</module>
+        <module>onosx-apps-mfwd</module>
+        <module>onosx-apps-igmp</module>
+        <module>onosx-apps-pim</module>
+        <module>onosx-apps-mlb</module>
+        <module>onosx-apps-openstackswitching</module>
+        <module>onosx-apps-pathpainter</module>
+        <module>onosx-apps-drivermatrix</module>
+        <module>onosx-apps-cpman</module>
+    </modules>
+
+    <properties>
+        <web.context>default</web.context>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.onosproject</groupId>
+            <artifactId>onosx-core-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.onosproject</groupId>
+            <artifactId>onosx-utils-osgi</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.scr.annotations</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-scr-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.onosproject</groupId>
+                <artifactId>onosx-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

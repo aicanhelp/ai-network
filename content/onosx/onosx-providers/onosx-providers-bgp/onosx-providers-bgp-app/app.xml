@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<app name="org.onosproject.bgp" origin="ON.Lab" version="${project.version}"
+     featuresRepo="mvn:${project.groupId}/${project.artifactId}/${project.version}/xml/features"
+     features="${project.artifactId}">
+    <description>${project.description}</description>
+    <artifact>mvn:${project.groupId}/onosx-protocols-bgp-io/${project.version}</artifact>
+    <artifact>mvn:${project.groupId}/onosx-protocols-bgp-api/${project.version}</artifact>
+    <artifact>mvn:${project.groupId}/onosx-protocols-bgp-ctl/${project.version}</artifact>
+    <artifact>mvn:${project.groupId}/onosx-providers-bgp-topology/${project.version}</artifact>
+    <artifact>mvn:${project.groupId}/onosx-providers-bgp-cfg/${project.version}</artifact>
+</app>

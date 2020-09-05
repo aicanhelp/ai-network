@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.2.0" name="${project.artifactId}-${project.version}">
+    <feature name="${project.artifactId}" version="${project.version}"
+             description="${project.description}">
+        <feature>onosx-core-api</feature>
+        <bundle>mvn:io.netty/netty-common/4.0.23.Final</bundle>
+        <bundle>mvn:io.netty/netty-buffer/4.0.23.Final</bundle>
+        <bundle>mvn:io.netty/netty-transport/4.0.23.Final</bundle>
+        <bundle>mvn:io.netty/netty-handler/4.0.23.Final</bundle>
+        <bundle>mvn:io.netty/netty-codec/4.0.23.Final</bundle>
+        <bundle>mvn:${project.groupId}/onosx-protocols-ovsdb-rfc/${project.version}</bundle>
+        <bundle>mvn:${project.groupId}/onosx-protocols-ovsdb-api/${project.version}</bundle>
+        <bundle>mvn:${project.groupId}/onosx-protocols-ovsdb-ctl/${project.version}</bundle>
+
+        <bundle>mvn:${project.groupId}/onosx-providers-ovsdb-device/${project.version}</bundle>
+        <bundle>mvn:${project.groupId}/onosx-providers-ovsdb-host/${project.version}</bundle>
+        <bundle>mvn:${project.groupId}/onosx-providers-ovsdb-tunnel/${project.version}</bundle>
+    </feature>
+</features>

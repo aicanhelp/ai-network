@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.2.0" name="${project.artifactId}-${project.version}">
+    <feature name="${project.artifactId}" version="${project.version}"
+             description="${project.description}">
+        <bundle>mvn:com.sun.jersey/jersey-client/1.19</bundle>
+        <bundle>mvn:${project.groupId}/onosx-apps-virtualbng/${project.version}</bundle>
+        <feature>onosx-utils-thirdparty-web</feature>
+    </feature>
+</features>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.2.0" name="${project.artifactId}-${project.version}">
+    <feature name="${project.artifactId}" version="${project.version}"
+             description="${project.description}">
+        <feature>onosx-core-api</feature>
+        <bundle>mvn:io.netty/netty/3.9.2.Final</bundle>
+        <bundle>mvn:${project.groupId}/onosx-protocols-netconf-api/${project.version}</bundle>
+        <bundle>mvn:${project.groupId}/onosx-protocols-netconf-ctl/${project.version}</bundle>
+
+        <bundle>mvn:${project.groupId}/onosx-protocols-netconf-device/${project.version}</bundle>
+        <!-- Question: should there be the jnc stuff here? Or is it just for testing -->
+    </feature>
+</features>
+

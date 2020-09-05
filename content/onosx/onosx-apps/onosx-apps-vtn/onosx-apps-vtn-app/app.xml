@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<app name="org.onosproject.vtn" origin="ON.Lab" version="${project.version}"
+     featuresRepo="mvn:${project.groupId}/${project.artifactId}/${project.version}/xml/features"
+     features="${project.artifactId}">
+    <description>${project.description}</description>
+
+    <artifact>mvn:${project.groupId}/onosx-apps-vtn-mgr/${project.version}</artifact>
+    <artifact>mvn:${project.groupId}/onosx-apps-sfc-mgr/${project.version}</artifact>
+    <artifact>mvn:${project.groupId}/onosx-apps-vtn-web/${project.version}</artifact>
+    <artifact>mvn:${project.groupId}/onosx-apps-vtn-rsc/${project.version}</artifact>
+</app>

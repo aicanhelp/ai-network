@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.onosproject</groupId>
+        <artifactId>onosx-base</artifactId>
+        <version>1</version>
+    </parent>
+
+    <groupId>org.onosproject</groupId>
+    <artifactId>onosx-karaf-assembly</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+
+    <description>ONOS Apache Karaf assembly definitions</description>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+                <executions>
+                    <execution>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <target>
+                                <exec executable="python">
+                                    <arg value="${basedir}/onos-assembly.py"/>
+                                </exec>
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.karaf.tooling</groupId>
+                <artifactId>karaf-maven-plugin</artifactId>
+                <version>3.0.3</version>
+
+                <executions>
+                    <execution>
+                        <id>features-add-to-repo</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>features-add-to-repository</goal>
+                        </goals>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>file:${basedir}/target/staged-repos.xml</descriptor>
+                            </descriptors>
+                            <features>
+                                <feature>onos-uber-synthetic</feature>
+                            </features>
+                            <repository>target/repo</repository>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

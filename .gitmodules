@@ -52,3 +52,39 @@
 [submodule "resources/OnosSystemTest"]
 	path = resources/OnosSystemTest
 	url = https://gerrit.onosproject.org/OnosSystemTest
+[submodule "resources/sdn-onos-maven"]
+	path = resources/sdn-onos-maven
+	url = https://github.com/opennetworkinglab/onos.git
+[submodule "resources/u-onos/onos-config"]
+	path = resources/u-onos/onos-config
+	url = https://github.com/onosproject/onos-config.git
+[submodule "resources/u-onos/onos-control"]
+	path = resources/u-onos/onos-control
+	url = https://github.com/onosproject/onos-control.git
+[submodule "resources/uonos-topo"]
+	path = resources/uonos-topo
+	url = https://github.com/onosproject/onos-topo.git
+[submodule "resources/u-onos/onos-gui"]
+	path = resources/u-onos/onos-gui
+	url = https://github.com/onosproject/onos-gui.git
+[submodule "resources/u-onos/onos-cli"]
+	path = resources/u-onos/onos-cli
+	url = https://github.com/onosproject/onos-cli.git
+[submodule "resources/uonos/onos-helm-charts"]
+	path = resources/u-onos/onos-helm-charts
+	url = https://github.com/onosproject/onos-helm-charts.git
+[submodule "resources/openconfig/gnmi"]
+	path = resources/openconfig/gnmi
+	url = https://github.com/openconfig/gnmi.git
+[submodule "resources/openconfig/ygot"]
+	path = resources/openconfig/ygot
+	url = https://github.com/openconfig/ygot.git
+[submodule "resources/book-systemapproach-sdn"]
+	path = resources/book-systemapproach-sdn
+	url = https://github.com/SystemsApproach/sdn.git
+[submodule "resources/google-gnxi"]
+	path = resources/openconfig/google-gnxi
+	url = https://github.com/google/gnxi.git
+[submodule "resources/openconfig/gnoi"]
+	path = resources/openconfig/gnoi
+	url = https://github.com/openconfig/gnoi.git

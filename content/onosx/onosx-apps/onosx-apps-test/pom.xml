@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.onosproject</groupId>
+        <artifactId>onosx-apps</artifactId>
+        <version>1.4.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>onosx-apps-test</artifactId>
+    <packaging>pom</packaging>
+
+    <description>ONOS test applications</description>
+
+    <modules>
+        <module>onosx-apps-test-election</module>
+        <module>onosx-apps-test-intent-perf</module>
+        <module>onosx-apps-test-messaging-perf</module>
+        <module>onosx-apps-test-demo</module>
+        <module>onosx-apps-test-distributed-primitives</module>
+    </modules>
+
+</project>

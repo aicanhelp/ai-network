@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.2.0" name="${project.artifactId}-${project.version}">
+    <feature name="${project.artifactId}" version="${project.version}"
+             description="${project.description}">
+        <feature>onosx-core-api</feature>
+        <bundle>mvn:io.netty/netty/3.9.2.Final</bundle>
+        <bundle>mvn:${project.groupId}/onosx-protocols-openflow-api/${project.version}</bundle>
+        <bundle>mvn:${project.groupId}/onosx-protocols-openflow-ctl/${project.version}</bundle>
+
+        <bundle>mvn:${project.groupId}/onosx-providers-openflow-device/${project.version}</bundle>
+        <bundle>mvn:${project.groupId}/onosx-providers-openflow-packet/${project.version}</bundle>
+        <bundle>mvn:${project.groupId}/onosx-providers-openflow-flow/${project.version}</bundle>
+        <bundle>mvn:${project.groupId}/onosx-providers-openflow-group/${project.version}</bundle>
+        <bundle>mvn:${project.groupId}/onosx-providers-openflow-meter/${project.version}</bundle>
+    </feature>
+</features>

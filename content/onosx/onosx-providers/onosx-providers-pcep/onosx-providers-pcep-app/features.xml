@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.2.0" name="${project.artifactId}-${project.version}">
+    <feature name="${project.artifactId}" version="${project.version}"
+             description="${project.description}">
+        <feature>onosx-core-api</feature>
+        <bundle>mvn:${project.groupId}/onosx-apps-pcep-api/${project.version}</bundle>
+        <bundle>mvn:${project.groupId}/onosx-protocols-pcep-io/${project.version}</bundle>
+        <bundle>mvn:${project.groupId}/onosx-protocols-pcep-api/${project.version}</bundle>
+        <bundle>mvn:${project.groupId}/onosx-protocols-pcep-ctl/${project.version}</bundle>
+        <bundle>mvn:${project.groupId}/onosx-providers-pcep-topology/${project.version}</bundle>
+        <bundle>mvn:${project.groupId}/onosx-providers-pcep-tunnel/${project.version}</bundle>
+    </feature>
+</features>

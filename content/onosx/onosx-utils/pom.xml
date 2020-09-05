@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.onosproject</groupId>
+        <artifactId>onosx</artifactId>
+        <version>1.4.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>onosx-utils</artifactId>
+    <packaging>pom</packaging>
+
+    <description>Domain agnostic onosx utilities</description>
+
+    <modules>
+        <module>onosx-utils-testing</module>
+        <module>onosx-utils-misc</module>
+        <module>onosx-utils-netty</module>
+        <module>onosx-utils-nio</module>
+        <module>onosx-utils-osgi</module>
+        <module>onosx-utils-rest</module>
+        <module>onosx-utils-thirdparty</module>
+        <module>onosx-utils-stc</module>
+        <module>onosx-utils-jdvue</module>
+        <module>onosx-utils-jnc</module>
+        <module>onosx-utils-catalyst</module> <!-- FIXME publish and remove before release -->
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.compendium</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

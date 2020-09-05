@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.2.0" name="${project.artifactId}-${project.version}">
+    <feature name="${project.artifactId}" version="${project.version}"
+             description="${project.description}">
+        <feature>onosx-core-api</feature>
+        <feature>onosx-drivers</feature>
+        <bundle>mvn:${project.groupId}/onosx-apps-vtn-mgr/${project.version}</bundle>
+        <bundle>mvn:${project.groupId}/onosx-apps-sfc-mgr/${project.version}</bundle>
+        <bundle>mvn:${project.groupId}/onosx-apps-vtn-web/${project.version}</bundle>
+        <bundle>mvn:${project.groupId}/onosx-apps-vtn-rsc/${project.version}</bundle>
+    </feature>
+</features>

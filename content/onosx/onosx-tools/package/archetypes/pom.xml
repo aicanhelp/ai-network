@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.onosproject</groupId>
+        <artifactId>onosx-base</artifactId>
+        <version>1</version>
+        <relativePath>../../build/pom.xml</relativePath>
+    </parent>
+
+    <groupId>org.onosproject</groupId>
+    <artifactId>onosx-archetypes</artifactId>
+    <version>1.4.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <description>ONOS archetypes project</description>
+
+    <modules>
+        <module>onosx-archetypes-api</module>
+        <module>onosx-archetypes-bundle</module>
+        <module>onosx-archetypes-cli</module>
+        <module>onosx-archetypes-web-api</module>
+        <module>onosx-archetypes-ui</module>
+        <module>onosx-archetypes-uitab</module>
+        <module>onosx-archetypes-uitopo</module>
+    </modules>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.archetype</groupId>
+                <artifactId>archetype-packaging</artifactId>
+                <version>2.2</version>
+            </extension>
+        </extensions>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-archetype-plugin</artifactId>
+                    <version>2.2</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>
