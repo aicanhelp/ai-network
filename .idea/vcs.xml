@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/OnosSystemTest" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/book-system-approach-5g" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/book-systemapproach-sdn" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/coredns" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/emitter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/floodlight" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/floodlight-webui" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/jmqtt" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/mininet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/odl/controller" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/odl/odlparent" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/openconfig/gnmi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/openconfig/gnoi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/openconfig/google-gnxi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/openconfig/ygot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/openstack-neutron" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/openvirtex" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/openvswitch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/sdn-faucet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/sdn-onos" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/sdn-onos-maven" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/sdn-pox" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/sdn-ryu" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/trfficcontrol" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/u-onos/onos-cli" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/u-onos/onos-config" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/u-onos/onos-control" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/u-onos/onos-gui" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/u-onos/onos-helm-charts" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/resources/vertx-mqtt-broker" vcs="Git" />
+  </component>
+</project>

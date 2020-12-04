@@ -5,7 +5,7 @@
 	path = resources/odl/controller
 	url = https://github.com/opendaylight/controller.git
 [submodule "resources/trfficcontrol"]
-	path = resources/trfficcontrol
+	path = resources/trafficcontrol
 	url = https://github.com/apache/trafficcontrol.git
 [submodule "resources/jmqtt"]
 	path = resources/jmqtt
@@ -88,3 +88,6 @@
 [submodule "resources/openconfig/gnoi"]
 	path = resources/openconfig/gnoi
 	url = https://github.com/openconfig/gnoi.git
+[submodule "resources/book-system-approach-5g"]
+	path = resources/book-system-approach-5g
+	url = https://github.com/SystemsApproach/5G.git
