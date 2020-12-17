@@ -80,7 +80,7 @@
 	path = resources/openconfig/ygot
 	url = https://github.com/openconfig/ygot.git
 [submodule "resources/book-systemapproach-sdn"]
-	path = resources/book-systemapproach-sdn
+	path = resources/book-system-approach-sdn
 	url = https://github.com/SystemsApproach/sdn.git
 [submodule "resources/google-gnxi"]
 	path = resources/openconfig/google-gnxi
@@ -91,3 +91,6 @@
 [submodule "resources/book-system-approach-5g"]
 	path = resources/book-system-approach-5g
 	url = https://github.com/SystemsApproach/5G.git
+[submodule "resources/book-system-aproach-sdn-cn"]
+	path = resources/book-system-aproach-sdn-cn
+	url = https://github.com/SystemsApproach/sdn-cn.git
