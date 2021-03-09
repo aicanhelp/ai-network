@@ -6,7 +6,7 @@
 	url = https://github.com/opendaylight/controller.git
 [submodule "resources/trfficcontrol"]
 	path = resources/trafficcontrol
-	url = https://github.com/apache/trafficcontrol.git
+	url = https://gitee.com/aimo-go/trafficcontrol.git
 [submodule "resources/jmqtt"]
 	path = resources/jmqtt
 	url = https://github.com/Cicizz/jmqtt.git
@@ -92,5 +92,5 @@
 	path = resources/book-system-approach-5g
 	url = https://github.com/SystemsApproach/5G.git
 [submodule "resources/book-system-aproach-sdn-cn"]
-	path = resources/book-system-aproach-sdn-cn
+	path = resources/book-system-approach-sdn-cn
 	url = https://github.com/SystemsApproach/sdn-cn.git
