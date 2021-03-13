@@ -1,0 +1,76 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Preface}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Chapter 1: Introduction}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}1.1 Market Landscape}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}1.2 Technical Landscape}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}1.2.1 Disaggregating the Control and Data Planes}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}1.2.2 Control Plane: Centralized vs Distributed}{9}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}1.2.3 Data Plane: Programmable vs Fixed-Function}{11}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}1.3 SDN: A Definition}{13}{section.2.3}
+\contentsline {chapter}{\numberline {3}Chapter 2: Use Cases}{15}{chapter.3}
+\contentsline {section}{\numberline {3.1}2.1 Virtual Networks}{15}{section.3.1}
+\contentsline {section}{\numberline {3.2}2.2 Switching Fabrics}{16}{section.3.2}
+\contentsline {section}{\numberline {3.3}2.3 Wide-Area Networks}{17}{section.3.3}
+\contentsline {section}{\numberline {3.4}2.4 Access Networks}{18}{section.3.4}
+\contentsline {section}{\numberline {3.5}2.5 Network Telemetry}{20}{section.3.5}
+\contentsline {chapter}{\numberline {4}Chapter 3: Basic Architecture}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}3.1 Software Stack}{23}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}3.1.1 Switch vs Host Implementation}{24}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}3.2 White-Box Switch}{25}{section.4.2}
+\contentsline {section}{\numberline {4.3}3.3 Switch OS}{26}{section.4.3}
+\contentsline {section}{\numberline {4.4}3.4 Network OS}{27}{section.4.4}
+\contentsline {section}{\numberline {4.5}3.5 Leaf-Spine Fabric}{27}{section.4.5}
+\contentsline {chapter}{\numberline {5}Chapter 4: White-Box Switches}{31}{chapter.5}
+\contentsline {section}{\numberline {5.1}4.1 Switch-Level Schematic}{31}{section.5.1}
+\contentsline {section}{\numberline {5.2}4.2 Forwarding Pipeline}{32}{section.5.2}
+\contentsline {section}{\numberline {5.3}4.3 Abstracting the Pipeline}{34}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}4.3.1 V1Model}{37}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}4.3.2 TNA}{39}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}4.4 P4 Programs}{40}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}4.4.1 Header Declarations and Metadata}{41}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}4.4.2 Parser}{42}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}4.4.3 Ingress Processing}{43}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}4.4.4 Egress Processing}{44}{subsection.5.4.4}
+\contentsline {subsection}{\numberline {5.4.5}4.4.5 Deparser}{45}{subsection.5.4.5}
+\contentsline {subsection}{\numberline {5.4.6}4.4.6 Switch Definition}{46}{subsection.5.4.6}
+\contentsline {section}{\numberline {5.5}4.5 Fixed-Function Pipelines}{46}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}4.5.1 OF-DPA}{46}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}4.5.2 SAI}{47}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}4.6 Comparison}{48}{section.5.6}
+\contentsline {chapter}{\numberline {6}Chapter 5: Switch OS}{51}{chapter.6}
+\contentsline {section}{\numberline {6.1}5.1 Thin Switch OS}{51}{section.6.1}
+\contentsline {section}{\numberline {6.2}5.2 P4Runtime}{53}{section.6.2}
+\contentsline {section}{\numberline {6.3}5.3 gNMI and gNOI}{56}{section.6.3}
+\contentsline {section}{\numberline {6.4}5.4 SONiC}{60}{section.6.4}
+\contentsline {chapter}{\numberline {7}Chapter 6: Network OS}{61}{chapter.7}
+\contentsline {section}{\numberline {7.1}6.1 ONOS Architecture}{61}{section.7.1}
+\contentsline {section}{\numberline {7.2}6.2 Distributed Core}{64}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}6.2.1 Atomix Primitives}{64}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}6.2.2 Services}{65}{subsection.7.2.2}
+\contentsline {section}{\numberline {7.3}6.3 Northbound Interface}{70}{section.7.3}
+\contentsline {section}{\numberline {7.4}6.4 Southbound Interface}{72}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}6.4.1 Provider Plugins}{72}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}6.4.2 Device Drivers}{73}{subsection.7.4.2}
+\contentsline {section}{\numberline {7.5}6.5 Scalable Performance}{73}{section.7.5}
+\contentsline {chapter}{\numberline {8}Chapter 7: Leaf-Spine Fabric}{75}{chapter.8}
+\contentsline {section}{\numberline {8.1}7.1 Feature Set}{75}{section.8.1}
+\contentsline {section}{\numberline {8.2}7.2 Segment Routing}{77}{section.8.2}
+\contentsline {section}{\numberline {8.3}7.3 Routes and Multicast}{78}{section.8.3}
+\contentsline {section}{\numberline {8.4}7.4 Customized Forwarding}{80}{section.8.4}
+\contentsline {chapter}{\numberline {9}Chapter 8: Future of SDN}{85}{chapter.9}
+\contentsline {section}{\numberline {9.1}8.1 Verifiable Networks}{85}{section.9.1}
+\contentsline {section}{\numberline {9.2}8.2 SD-RAN}{87}{section.9.2}
+\contentsline {chapter}{\numberline {10}Hands-on Programming}{91}{chapter.10}
+\contentsline {section}{\numberline {10.1}Environment}{91}{section.10.1}
+\contentsline {subsection}{\numberline {10.1.1}System Requirements}{91}{subsection.10.1.1}
+\contentsline {subsection}{\numberline {10.1.2}Download VM}{92}{subsection.10.1.2}
+\contentsline {subsection}{\numberline {10.1.3}Clone Repository}{92}{subsection.10.1.3}
+\contentsline {subsection}{\numberline {10.1.4}Upgrade Dependencies}{92}{subsection.10.1.4}
+\contentsline {subsection}{\numberline {10.1.5}Using an IDE}{93}{subsection.10.1.5}
+\contentsline {subsection}{\numberline {10.1.6}Repo Structure}{93}{subsection.10.1.6}
+\contentsline {subsection}{\numberline {10.1.7}Commands}{93}{subsection.10.1.7}
+\contentsline {section}{\numberline {10.2}Exercises}{94}{section.10.2}
+\contentsline {chapter}{\numberline {11}About This Book}{95}{chapter.11}
+\contentsline {section}{\numberline {11.1}Read the Book}{95}{section.11.1}
+\contentsline {section}{\numberline {11.2}Build the Book}{95}{section.11.2}
+\contentsline {section}{\numberline {11.3}Contribute to the Book}{96}{section.11.3}
