@@ -94,3 +94,9 @@
 [submodule "resources/book-system-aproach-sdn-cn"]
 	path = resources/book-system-approach-sdn-cn
 	url = https://github.com/SystemsApproach/sdn-cn.git
+[submodule "resources/u-onos/onos-api"]
+	path = resources/u-onos/onos-api
+	url = https://github.com/onosproject/onos-api.git
+[submodule "resources/u-onos/config-models"]
+	path = resources/u-onos/config-models
+	url = https://github.com/onosproject/config-models.git
