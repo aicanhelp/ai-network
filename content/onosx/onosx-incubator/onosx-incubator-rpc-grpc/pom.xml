@@ -18,7 +18,7 @@
         <onos.app.requires>org.onosproject.incubator.rpc</onos.app.requires>
         <!-- Note: update feature.xml when updating -->
         <grpc.version>0.9.0</grpc.version>
-        <grpc.netty.version>4.1.0.Beta6</grpc.netty.version>
+        <grpc.netty.version>4.1.68.Final</grpc.netty.version>
     </properties>
 
     <pluginRepositories>
